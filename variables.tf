@@ -5,7 +5,7 @@ variable "region" {
 }
 
 variable "aws_profile" {
-  description = "Optional AWS CLI profile name"
+  description = " name"
   type        = string
   default     = ""
 }
@@ -23,7 +23,7 @@ variable "vpc_cidr" {
 }
 
 variable "public_subnet_cidrs" {
-  description = "List of public subnet CIDRs (one per AZ)"
+  description = "List of public subnet CIDRs"
   type        = list(string)
   default     = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
 }
